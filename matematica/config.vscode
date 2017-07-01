@@ -1,0 +1,11 @@
+{
+    "window.zoomLevel": 2,
+    "arduino.path": "C:/Program Files (x86)/Arduino",
+    "arduino.additionalUrls": "",
+    "arduino.autoUpdateIndexFiles": false,
+    "arduino.logLevel": "info",
+    "editor.mouseWheelZoom": true,
+    "workbench.iconTheme": "vscode-icons",
+    "vsicons.dontShowNewVersionMessage": true,
+    "mongoShell.path": "c:\\xampp\\MongoDb\\bin\\mongo.exe"
+}
