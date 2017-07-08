@@ -1,2 +1,6 @@
 .vscode/
 .vscode/*
+bueno/node_modules/
+bueno/node_modules/*
+fs/node_modules/
+fs/node_modules/*

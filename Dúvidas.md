@@ -1,4 +1,5 @@
 Data : 2017/06/30
+
 Assunto : Javascript
 
 Dúvida : Entender o fluxo num programa javascript tanto sincrono como assincrono, e como controlar isso.
