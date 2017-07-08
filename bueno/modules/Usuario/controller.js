@@ -1,4 +1,4 @@
-const Usuario = require( '../models/usuario' )
+const Usuario = require( './model' )
 
 exports.save = function ( nome, senha, callback ) {
   console.log( nome )

@@ -2,7 +2,7 @@ const express = require( 'express' )
 const bodyParser = require( 'body-parser' )
 const port = '3000'
 
-const server = module.exports = express()
+const server = express()
 
 server.listen( port )
 
@@ -15,3 +15,5 @@ server.use( function ( req, res, next ) {
   res.setHeader( 'Access-Control-Allow-Headers', 'X-Requested-With, content-type, Authorization' )
   next()
 } )
+
+module.exports = express()

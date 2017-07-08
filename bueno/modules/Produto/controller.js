@@ -1,4 +1,4 @@
-const Produto = require( '../models/produto' )
+const Produto = require( './model' )
 
 exports.save = function ( codigo, descricao, preco, callback ) {
   new Produto( {
