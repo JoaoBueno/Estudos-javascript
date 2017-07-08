@@ -35,8 +35,8 @@ const middlewarePermission = ( req, res, next ) => {
   usuarioController.getPermissions( token )
     .then( user => {
       // console.log( 'Usuario: ', user )
-
-      console.log( 'Usuario.permission.read: ', user.permission.verb )
+      
+      console.log( 'Usuario.permission.read: ', user.permission )
       if ( isIn( user.permission.read )( collection ) )
         next()
       else
