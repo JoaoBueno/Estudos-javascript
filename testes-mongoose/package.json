@@ -1,0 +1,14 @@
+{
+  "name": "testes-mongoose",
+  "version": "1.0.0",
+  "description": "Testes e aprendizados referentes ao Mongoose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "JCBM",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.11.1"
+  }
+}

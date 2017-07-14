@@ -16,4 +16,4 @@ server.use( function ( req, res, next ) {
   next()
 } )
 
-module.exports = express()
+module.exports = server

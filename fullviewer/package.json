@@ -1,0 +1,15 @@
+{
+  "name": "FullViewer",
+  "version": "1.0.0",
+  "description": "FullViewer - Ligação cobol linux x windows",
+  "main": "FullViewer.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "João Bueno",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^1.6.11",
+    "socket.io": "^2.0.3"
+  }
+}

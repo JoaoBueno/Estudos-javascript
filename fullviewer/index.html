@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./photon/css/photon.css">
+  <!-- <script src="./controller.js"></script> -->
+  <title>FullViewer</title>
+</head>
+<div class="window">
+  <header class="toolbar toolbar-header">
+    <div class="toolbar-actions">
+      <h1 class="title">FullControl Viewer</h1>
+      <div class="btn-group pull-right">
+        <button id="btnMinimiza" class="btn btn-default">
+                    <span class="icon icon-minus"></span>
+                </button>
+        <button id="btnMaximiza" class="btn btn-default">
+                    <span class="icon icon-plus"></span>
+                </button>
+        <button id="btnFecha" class="btn btn-default">
+                    <span class="icon icon-cancel"></span>
+                </button>
+      </div>
+    </div>
+  </header>
+
+  <body>
+    <center>
+      <h4>Historico</h4>
+      <div>
+        <textarea id="taSaida" style="width: 95%; height: 70vh; resize: none"></textarea>
+      </div>
+    </center>
+  </body>
+
+  <script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+  </script>
+
+</html>

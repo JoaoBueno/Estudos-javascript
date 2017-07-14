@@ -4,3 +4,7 @@ bueno/node_modules/
 bueno/node_modules/*
 fs/node_modules/
 fs/node_modules/*
+testes-mongoose/node_modules/
+testes-mongoose/node_modules/*
+fullviewer/node_modules/
+fullviewer/node_modules/*

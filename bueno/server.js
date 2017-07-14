@@ -8,5 +8,5 @@ server.get( '/', function ( req, res ) {
 } )
 
 // Rotas
-server.use( '/produtos', produtos )
+server.use( '/api/produtos', produtos )
 server.use( '/api/usuarios', usuarios )
