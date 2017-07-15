@@ -1,4 +1,5 @@
 const electron = require( 'electron' )
+
 // Module to control application life.
 const app = electron.app
 // Module to create native browser window.
@@ -31,10 +32,10 @@ function createWindow () {
   } ) )
 
   // Open the DevTools.
-  // mainWindow.webContents.openDevTools()
+  mainWindow.webContents.openDevTools()
 
   // Emitted when the window is closed.
-  mainWindow.on( 'closed', function () {
+  mainWindow.on( 'closed', () => {
     // Dereference the window object, usually you would store windows
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
@@ -48,7 +49,7 @@ function createWindow () {
 app.on( 'ready', createWindow )
 
 // Quit when all windows are closed.
-app.on( 'window-all-closed', function () {
+app.on( 'window-all-closed', () => {
   if ( appIcon ) appIcon.destroy()
   // On OS X it is common for applications and their menu bar
   // to stay active until the user quits explicitly with Cmd + Q
@@ -57,7 +58,7 @@ app.on( 'window-all-closed', function () {
   }
 } )
 
-app.on( 'activate', function () {
+app.on( 'activate', () => {
   // On OS X it's common to re-create a window in the app when the
   // dock icon is clicked and there are no other windows open.
   if ( mainWindow === null ) {
@@ -68,14 +69,14 @@ app.on( 'activate', function () {
 // In this file you can include the rest of your app's specific main process
 // code. You can also put them in separate files and require them here.
 
-ipc.on( 'put-in-tray', function ( event ) {
+ipc.on( 'put-in-tray', ( event ) => {
   const iconName = process.platform === 'win32' ? 'icon.png' : 'icon.png'
   const iconPath = path.join( __dirname, iconName )
   appIcon = new Tray( iconPath )
   const contextMenu = Menu.buildFromTemplate( [
     {
       label: 'Restaura',
-      click: function () {
+      click: () => {
         if ( !mainWindow.show() ) {
           mainWindow.show()
         }
@@ -86,7 +87,7 @@ ipc.on( 'put-in-tray', function ( event ) {
     } ,
     {
       label: 'Sair',
-      click: function () {
+      click: () => {
         app.quit()
       }
     }
@@ -95,6 +96,6 @@ ipc.on( 'put-in-tray', function ( event ) {
   appIcon.setContextMenu( contextMenu )
 } )
 
-ipc.on( 'appIcon', function ( event ) {
+ipc.on( 'appIcon', ( event ) => {
   BrowserWindow.getFocusedWindow().restore()
 } )

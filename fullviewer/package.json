@@ -9,7 +9,6 @@
   "author": "João Bueno",
   "license": "ISC",
   "dependencies": {
-    "electron": "^1.6.11",
-    "socket.io": "^2.0.3"
+    "electron": "^1.6.11"
   }
 }

@@ -3,7 +3,7 @@ const router = express.Router()
 const usuarioController = require( './controller' )
 
 function pegarToken ( req, res, next ) {
-  const header = req.headers['authorization']
+  const header = req.headers[ 'authorization' ]
   if ( typeof header !== 'undefined' ) {
     req.token = header
     next()
@@ -29,7 +29,8 @@ router.post( '/login', function ( req, res ) {
   } )
 } )
 
-router.get( '/listar', pegarToken, function ( req, res ) {
+// router.get( '/listar', pegarToken, function ( req, res ) {
+router.get( '/listar', function ( req, res ) {
   const token = req.token
   usuarioController.list( token, function ( resp ) {
     res.json( resp )
