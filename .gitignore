@@ -8,3 +8,5 @@ testes-mongoose/node_modules/
 testes-mongoose/node_modules/*
 fullviewer/node_modules/
 fullviewer/node_modules/*
+vue/node_modules/
+vue/node_modules/*
