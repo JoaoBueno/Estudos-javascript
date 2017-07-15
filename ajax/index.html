@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 
 <head>
-  <title></title>
+  <title>Ajax Mother Fuka!</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+  <script>window.$ = window.jQuery = require('jquery');</script>
 </head>
 
 <body>
@@ -16,59 +17,20 @@
     <br>
     <input type="text" id="descricao" name="descricao" value="">
     <br><br>
-    <!--  <button id="send">Enviar</button> -->
     <input type="submit">
   </form>
+  <div class="product-infos">
+
+  </div>
   <div class="result">
 
   </div>
-
-
-  <script>
-    $(document).ready(() => {
-      // $.get("http://localhost:3000/api/produtos/595a690c806de287d6fac2d1", function (data) {
-      //   console.log('Data:', data)
-      //   $(".result").html(data);
-      //   $("#codigo").val(data.codigo);
-      //   $("#descricao").val(data.descricao);
-      //   // alert("Load was performed.");
-      // });
-
-
-
-      $("form").submit(function (event) {
-
-        event.preventDefault();
-
-        const data = {
-          "codigo": $('#codigo').val(),
-          "descricao": $("#descricao").val()
-        }
-        console.log('data:', data)
-
-        $.ajax({
-          beforeSend: function (xhrObj) {
-            // xhrObj.setRequestHeader("Content-Type", "application/json");
-            xhrObj.setRequestHeader('Access-Control-Allow-origin', '*');
-            // xhrObj.setRequestHeader('Access-Control-Allow-Headers', '*');
-            // xhrObj.setRequestHeader('Access-Control-Request-Headers', '*');
-
-          },
-          crossDomain: true,
-          type: "POST",
-          headers: { "Content-Type": "application/json" },
-          url: "http://localhost:3000/api/produtos",
-          data
-        }).done(function (data) {
-          console.log(data);
-        });
-
-        // $.post("http://localhost:3000/api/produtos", $('form').serialize(), function (data) {
-        // console.log('Data:', data)
-        //})
-      })
-    })
-  </script>
 </body>
+
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js')
+
+</script>
 
 </html>

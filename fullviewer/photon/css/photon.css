@@ -536,6 +536,15 @@ h6 {
   text-align: center;
   color: #555;
   cursor: default;
+  display: inline-block;
+  width: 100%;
+}
+
+.title span {
+  position: relative;
+  width: 15%; 
+  display: block;
+  margin: 0 auto;
 }
 
 .toolbar-borderless {
