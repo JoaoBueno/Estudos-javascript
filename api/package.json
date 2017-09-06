@@ -1,0 +1,16 @@
+{
+  "name": "fullcontrolapi",
+  "version": "1.0.0",
+  "description": "FullControl API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "FullControl",
+    "API",
+    "servidor"
+  ],
+  "author": "Joao Bueno",
+  "license": "ISC"
+}

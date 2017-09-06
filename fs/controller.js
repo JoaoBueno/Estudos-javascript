@@ -1,3 +1,4 @@
+// @ts-check
 const Model = require( './model' )
 
 const create = ( data ) => {

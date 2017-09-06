@@ -1,0 +1,19 @@
+{
+  "name": "mongoose-atomic",
+  "version": "1.0.0",
+  "description": "Atomic Design com Mongoose",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongoose",
+    "node.js"
+  ],
+  "author": "João Bueno",
+  "license": "ISC",
+  "dependencies": {
+    "mongoose": "^4.11.4",
+    "npm": "^5.3.0"
+  }
+}

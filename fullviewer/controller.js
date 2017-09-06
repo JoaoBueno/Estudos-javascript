@@ -15,8 +15,8 @@ document.addEventListener( 'DOMContentLoaded', function ( event ) {
   } )
 
   document.getElementById( 'btnMaximiza' ).addEventListener( 'click', function () {
-    // $( '#btnMaximiza' ).click( function () {
-    // console.log( 'maximiza' )
+     $( '#btnMaximiza' ).click( function () {
+     console.log( 'maximiza' )
     if ( remote.BrowserWindow.getFocusedWindow().isMaximized() ) {
       remote.BrowserWindow.getFocusedWindow().restore()
     } else {
