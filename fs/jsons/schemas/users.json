@@ -1,0 +1,13 @@
+{
+  "structure": [
+    { "name": "name", "atom": "name" },
+    { "name": "nome", "atom": "name" },
+    { "name": "email", "atom": "email" },
+    { "name": "description", "atom": "description" },
+    { "name": "type", "atom": "type" },
+    { "name": "attack", "atom": "attack" },
+    { "name": "defense", "atom": "defense" },
+    { "name": "height", "atom": "height" },
+    { "name": "created_at", "atom": "created_at" }
+  ]
+}

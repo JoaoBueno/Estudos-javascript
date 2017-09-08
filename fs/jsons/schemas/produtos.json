@@ -1,0 +1,7 @@
+{
+  "structure": [
+    { "name": "codigo", "atom": "name" },
+    { "name": "descricao", "atom": "name" },
+    { "name": "created_at", "atom": "created_at" }
+  ]
+}
