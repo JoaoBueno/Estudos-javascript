@@ -1,7 +1,7 @@
 'use strict'
 
 const Schema = require('./schema')
-const Model = require('./model')(Schema, 'Pokemon')
+const Model = require('./model')(Schema, 'User')
 
 const CRUD = {
   create: function(data) {

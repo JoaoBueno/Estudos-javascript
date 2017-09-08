@@ -17,6 +17,7 @@ const view = function(req, res, next) {
 }
 
 const create = function(req, res, next) {
+  console.log('daattatatatatatata', req.body)
   Controller.create(req.body) 
   .then(data => res.json(data))
   .catch(err => res.json(err))
@@ -47,14 +48,14 @@ const routes = [
     action: list
   },
   {
-    method: 'get',
-    path: '/:id',
-    action: view
-  },
-  {
     method: 'post',
     path: '/',
     action: create
+  },
+  {
+    method: 'get',
+    path: '/:id',
+    action: view
   },
   {
     method: 'put',
@@ -69,6 +70,7 @@ const routes = [
 ]
 
 const createRoute = route => {
+  console.log(route)
   return router[route.method](route.path, route.action)
 }
 
