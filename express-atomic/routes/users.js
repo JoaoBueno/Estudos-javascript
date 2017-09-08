@@ -42,15 +42,9 @@ const Controller = {
 
 
 const list = function(req, res, next) {
-<<<<<<< HEAD
-  return Controller.retrieve(res, {})
-  // next()
-  // res.send('oiii')
-=======
   Controller.retrieve({}) 
   .then(data => res.json(data))
   .catch(err => res.json(err))
->>>>>>> b0b96ccdde5d4174cbcbf917dc464d17707ed372
 }
 
 const view = function(req, res, next) {

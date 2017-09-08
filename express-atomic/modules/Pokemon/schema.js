@@ -20,7 +20,7 @@ const structure = [
 // }
 
 const toMolecule = (obj, field) => {
-  const _field = require('./atoms/' + field.atom)
+  const _field = require('../../atoms/' + field.atom)
   obj[field.name] = _field
   return obj
 }
