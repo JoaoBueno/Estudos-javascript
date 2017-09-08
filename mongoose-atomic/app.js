@@ -4,7 +4,7 @@ require('./config/db')
 
 const CRUD = require('./pokemon-controller')
 
-const query = { name: /atomicmona/i }
+const query = { name: /atomicmon/i }
 // const data = {
 //   name: 'Atomicmon',
 //   description: 'Vai que vai',
@@ -47,4 +47,4 @@ const query = { name: /atomicmona/i }
 // console.log('--------------------------------------------------------------------')
 
 
-CRUD.retrieve(query)
+ CRUD.retrieve(query)
