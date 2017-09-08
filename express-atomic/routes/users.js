@@ -4,13 +4,39 @@ var router = express.Router()
 const Controller = require('../pokemon-controller')
 
 const list = function(req, res, next) {
-  console.log(Controller.retrieve(res, {}) )
-  // .then(data => res.json(data))
-  // .catch(err => res.json(err))
+  Controller.retrieve({}) 
+  .then(data => res.json(data))
+  .catch(err => res.json(err))
 }
 
 const view = function(req, res, next) {
-  res.send('respond with a view')
+  Controller.retrieve({"_id":"59aed3c8df33683558c3392f"}) 
+  .then(data => res.json(data))
+  .catch(err => res.json(err))
+}
+
+const create = function(req, res, next) {
+  Controller.create(req.body) 
+  .then(data => res.json(data))
+  .catch(err => res.json(err))
+}
+
+const update = function(req, res, next) {
+  const query = {
+    _id: req.params.id
+  }
+  Controller.update(query, req.body) 
+  .then(data => res.json(data))
+  .catch(err => res.json(err))
+}
+
+const remove = function(req, res, next) {
+  const query = {
+    _id: req.params.id
+  }
+  Controller.delete(query) 
+  .then(data => res.json(data))
+  .catch(err => res.json(err))
 }
 
 const routes = [
@@ -23,6 +49,21 @@ const routes = [
     method: 'get',
     path: '/view',
     action: view
+  },
+  {
+    method: 'post',
+    path: '/',
+    action: create
+  },
+  {
+    method: 'put',
+    path: '/:id',
+    action: update
+  },
+  {
+    method: 'delete',
+    path: '/:id',
+    action: remove
   }
 ]
 

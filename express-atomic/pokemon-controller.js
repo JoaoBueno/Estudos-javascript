@@ -6,32 +6,22 @@ const Model = require('./model')(Schema, 'Pokemon')
 const CRUD = {
   create: function(data) {
     console.log('data', data)
-    const Suissamon = new Model(data)
-    console.log('suissamon', Suissamon)
-    Suissamon.save(function(err, data) {
-      if (err) return console.log('Erro:', err)
-      return console.log('Inseriu:', data)
-    })
+    return Model.create(data)
   },
 
-  retrieve: function(res, query) {
-    console.log('retrieve', Model.find)
+  retrieve: function(query) {
     return Model.find(query).exec()
   },
 
   update: function(query, mod, options) {
+    console.log('query', query)
+    console.log('mod', mod)
     options = options || {}
-    Model.update(query, mod, options, function(err, data) {
-      if (err) return console.log('Erro:', err)
-      return console.log('Alterou:', data)
-    })
+    return Model.update(query, mod, options).exec()
   },
 
   delete: function(query) {
-    Model.remove(query, function(err, data) {
-      if (err) return console.log('Erro:', err)
-      return console.log('Deletou:', data)
-    })
+    return Model.remove(query).exec()
   }
 }
 
