@@ -28,7 +28,7 @@ const getRoutes = require('./get.routes')
 const createRoutes = require('./create.routes')(app)
 
 const maped = modules.map(getRoutes)
-console.log('maped', maped)
+// console.log('maped', maped)
 
 maped.reduce(createRoutes, app)
 

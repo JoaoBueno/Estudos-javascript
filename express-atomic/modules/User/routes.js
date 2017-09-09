@@ -69,7 +69,7 @@ const routes = [
 ]
 
 const createRoute = route => {
-  console.log(route)
+  // console.log(route)
   return router[route.method](route.path, route.action)
 }
 
