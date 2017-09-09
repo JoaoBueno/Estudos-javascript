@@ -17,7 +17,6 @@ const view = function(req, res, next) {
 }
 
 const create = function(req, res, next) {
-  console.log('daattatatatatatata', req.body)
   Controller.create(req.body) 
   .then(data => res.json(data))
   .catch(err => res.json(err))

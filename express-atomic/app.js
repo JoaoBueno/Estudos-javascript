@@ -9,24 +9,6 @@ const bodyParser = require('body-parser')
 const app = express()
 
 const index = require('./routes/index')
-// const users = require('./routes/users');
-
-// const pokemons = require('./modules/Pokemon/routes');
-
-const modules = require('./get.modules')('./modules')
-
-const getRoutes = require('./get.routes')
-
-// const maped = modules.map(getRoutes)
-// console.log('maped', maped)
-
-const createRoutes = require('./create.routes')(app)
-
-const maped = modules.map(getRoutes)
-console.log('maped', maped)
-
-maped.reduce(createRoutes, app)
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'))
 app.set('view engine', 'jade')
@@ -40,9 +22,15 @@ app.use(cookieParser())
 app.use(express.static(path.join(__dirname, 'public')))
 
 app.use('/', index)
-// app.use('/users', users);
 
-// app.use('/api/pokemons', pokemons)
+const modules = require('./get.modules')('./modules')
+const getRoutes = require('./get.routes')
+const createRoutes = require('./create.routes')(app)
+
+const maped = modules.map(getRoutes)
+console.log('maped', maped)
+
+maped.reduce(createRoutes, app)
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
