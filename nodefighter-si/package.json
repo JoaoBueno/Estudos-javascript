@@ -1,0 +1,59 @@
+{
+  "_from": "nodefighter",
+  "_id": "nodefighter@0.1.6",
+  "_inBundle": false,
+  "_integrity": "sha1-MFWgCa2hxAnhkrmTkysGC1Wrt+g=",
+  "_location": "/nodefighter",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "nodefighter",
+    "name": "nodefighter",
+    "escapedName": "nodefighter",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nodefighter/-/nodefighter-0.1.6.tgz",
+  "_shasum": "3055a009ada1c409e192b993932b060b55abb7e8",
+  "_spec": "nodefighter",
+  "_where": "S:\\testes",
+  "author": {
+    "name": "Prashant Baid"
+  },
+  "bin": {
+    "nodefighter": "game.js"
+  },
+  "bugs": {
+    "url": "https://github.com/prashantbaid/nodefighter/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "chalk": "^1.1.1",
+    "keypress": "^0.2.1"
+  },
+  "deprecated": false,
+  "description": "A simple game inspired by the famous Road Fighter that runs in command line",
+  "homepage": "https://github.com/prashantbaid/nodefighter",
+  "keywords": [
+    "game",
+    "command line game",
+    "road fighter"
+  ],
+  "license": "MIT",
+  "main": "game.js",
+  "name": "nodefighter",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prashantbaid/nodefighter.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.1.6"
+}
