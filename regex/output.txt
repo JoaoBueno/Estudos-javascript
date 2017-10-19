@@ -1,0 +1,23 @@
+|DT.CADAST.|                 C L I E N T E                  |L| VENDEDOR |DT.ULT.NF |DIAS|VALOR FATURADO|       CIDADE       |UF|    TELEFONE   |  ACUMULADO   |
+|20/07/2015|  3792339000166-SERVICO NAC. DE APRENDIZAGEM IND|C|          |          | 821|          0,00|RIO BRANCO          |AC|( 68) 3121.4245|              |
+|06/01/2014| 63601116000104-M E Z INDUSTRIA E COMERCIO LTDA |C|          |          |1381|          0,00|RIO BRANCO          |AC|( 68) 3221.1234|              |
+|27/08/2013|  3659166000293-INSTITUTO BRAS DO MEIO AMBIEN E |C|          |          |1513|          0,00|RIO BRANCO          |AC|( 68) 3211.1712|              |
+|29/05/2012| 34698316000110-CONSDUTRA CONSTRTUTORA DUTRA LTD|C|     125  |29/05/2012|1968|         73,80|RIO BRANCO          |AC|( 68) 9985.6402|         73,80|
+|30/01/2008| 28949428000102-REMAQ IND.COM.E REPRESENTACOES L|C|     201  |23/12/2009|2856|        310,00|RIO BRANCO          |AC|( 22) 2772.5601|      6.217,85|
+|05/06/2009| 24946352000607-JM TERRAPLENAGEM E CONSTRUCOES L|C|       5  |20/10/2009|2920|      1.440,00|RIO BRANCO          |AC|( 68) 3248.6204|     10.958,91|
+|19/05/2009| 41522319000164-PREFEITURA MUNICIP.DE CANAVIEIRA|C|     999  |19/05/2009|3074|        225,00|RIO BRANCO          |AC|(   )          |        251,25|
+|10/06/2008|  7925611000190-SOCIEDADE  E INCORP.VILA DO ABAD|C|     201  |10/06/2008|3417|         10,00|RIO BRANCO          |AC|( 62) 3331.3316|        429,98|
+|20/01/1999|  1036755001180-VIACAO ANAPOLINA LTDA           |C|       3  |08/11/2007|3632|         14,00|RIO BRANCO          |AC|(   ) 3628.1001|      2.212,52|
+|15/08/2006|  6290731000103-JC DA SILVA LUNA ME             |C|          |          |4082|          0,00|RIO BRANCO          |AC|( 68) 3226.2502|              |
+|14/07/2006|  7852036000142-RIBEIRO COM.E REP. DE PROD.AGRO.|C|          |          |4114|          0,00|RIO BRANCO          |AC|( 66) 3594.1265|              |
+|03/06/2003| 26442970000483-TCO ENGENHARIA LTDA.            |C|          |          |5251|          0,00|RIO BRANCO          |AC|( 68)  227.8898|              |
+|02/07/2002| 76535764032770-BRASIL TELECOM S/A.             |C|          |          |5587|          0,00|RIO BRANCO          |AC|(   )          |              |
+|03/12/1999| 37334355000108-PREFEITURA MUNICIPAL DE SANDOLAN|C|          |          |6529|          0,00|RIO BRANCO          |AC|(   )          |              |
+|30/09/2009| 24946352000879-JM TERRAPLENAGEM E CONSTRUCOES L|C|       5  |30/06/2009|3032|      1.400,00|BELEM               |AL|( 61) 3404.0666|      1.400,00|
+|23/01/2008|  8650571000183-MINERACAO VALE VERDE LTDA.      |C|      44  |04/04/2011|2389|      2.340,00|CRAIBAS             |AL|( 82) 3539.2333|      5.046,08|
+|22/04/2016|  7991012000174-ADEA - SOCIEDADE DE DESENVOLVIME|B|          |          | 544|          0,00|MACEIO              |AL|(   )          |              |
+|15/02/2016|     5653431494-ANTONIO DA CONCEICAO            |C|     999  |16/02/2016| 610|        132,51|MACEIO              |AL|( 82) 8874.3102|              |
+|21/07/2015|  3798361000113-SERVICO NAC. DE APRENDIZAGEM IND|C|          |          | 820|          0,00|MACEIO              |AL|(   )          |              |
+|30/08/2013|  3659166000455-INSTITUTO BRAS DO MEIO AMBIEN E |C|          |          |1510|          0,00|MACEIO              |AL|( 82) 2122.8300|              |
+|24/07/2002|      802000959-HC PNEUS S/A - LOJA 09          |C|          |          |5565|          0,00|MACEIO              |AL|(362) 1500.0000|              |
+|16/01/1998|     6263362871-FABIO DOLACIO                   |C|          |          |7215|          0,00|MACEIO              |AL|(   )          |              |
