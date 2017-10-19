@@ -1,5 +1,5 @@
-var sleep = require('sleep')
-
+const keypress = require('keypress');
+const sleep = require('sleep')
 const _ESC = String.fromCharCode(0x1b)
 
 //ESC[2J -> limpa a tela
@@ -35,6 +35,17 @@ const _cor = (c1, c2, c3) => {
   console.log(_ESC + '[' + c1 + ';' + c2 + ';' + c3 + 'm')
 }
 
+// make `process.stdin` begin emitting "keypress" events 
+keypress(process.stdin);
+
+// listen for the "keypress" event 
+process.stdin.on('keypress', function (ch, key) {
+ console.log('got "keypress"', key);
+ if (key && key.ctrl && key.name == 'c') {
+   process.stdin.pause();
+ }
+});
+
 let invaders = [
   [1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
   [1, 2, 1, 1, 1, 1, 1, 1, 1, 1],
@@ -66,7 +77,7 @@ for (let a = 0; a < 10; a++) {
         // _pos(22, 20, c)
       }
     }
-    sleep.sleep(1)
+    sleep.msleep(500)
     if (isEven(a) === true) {
       c++
     } else {
@@ -80,3 +91,6 @@ for (let a = 0; a < 10; a++) {
     c++
   }
 }
+
+process.stdin.setRawMode(true);
+// process.stdin.resume();

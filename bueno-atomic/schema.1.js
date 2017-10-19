@@ -19,6 +19,6 @@ const _schema = {
   created_at
 }
 
-console.log("_schema", _schema)
+console.log('_schema', _schema)
 
 module.exports = new Schema(_schema)
