@@ -7,7 +7,7 @@ const oQueEIsso = n => {
     m = m - i
     i = i + 2
     c = c + 1
-    //    console.log( m, i, c )
+    console.log( m, i, c )
   }
   if (m === 0) return c
   return '~' + (c - 1)
