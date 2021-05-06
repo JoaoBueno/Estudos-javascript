@@ -14,7 +14,7 @@
     "inherits": "^2.0.3",
     "isarray": "^2.0.4",
     "kareem": "^2.2.1",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.21",
     "lodash.get": "^4.4.2",
     "mongoose": "^5.8.1",
     "mpath": "^0.6.0",
