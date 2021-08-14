@@ -135,6 +135,10 @@ names.next()
 names.prev()
 console.log(names.getElement()) // displays Cynthia
 
+names.front()
+console.log(names.currPos())
+console.log(names.length())
+
 for (names.front(); names.currPos() < names.length(); names.next()) {
-  console.log(names.getElement())
+  console.log(names.currPos(), names.getElement())
 }
