@@ -9,6 +9,6 @@
   "author": "JCBM",
   "license": "ISC",
   "dependencies": {
-    "mongoose": "^4.13.14"
+    "mongoose": "^5.7.5"
   }
 }
